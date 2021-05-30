@@ -1,0 +1,32 @@
+Notice de la calculatrice:
+
+----Ecrivez votre base dans la premiere ligne, dans l'ordre croissant, sachant qu'on peut aller de la base 2, jusque la base 96.
+    Vous ne pouvez pas représenter une base avec des caractrères ne faisant pas partie de la table ASCII: entre 32 et 126.
+    Ne repetez pas de caractères dans votre base.
+
+Exemple:
+ - 01 représente la base binaire.
+ - 0123456789abcdef représente la base hexadecimal
+ - 0123456789abcdefghijklmnopqrstuvwxyz représente la base 36
+ - 0123456789é ne répresente pas une base, en effet, 'é' n'est pas entre 32 et 126 de la table ASCII
+
+----Ecrivez votre opération dans la 2e ligne:
+ - + pour l'addition
+ - - pour la soustraction
+ - * pour la multiplication
+ - / pour la division
+ - % pour le reste de la division
+
+----Ecrivez votre premier nombre dans la 3e ligne, et votre deuxieme nombre dans la 4e.
+    Votre nombre ne peut pas contenir des caractrères ne faisant pas partie de la base.
+
+Exemple de fichier:
+
+0123456789
++
+101
+2035
+
+On est en base 10, l'opération est l'addition => 101 + 2035 = 2136.
+
+----Pour executer le programme, vous devez passer le nom du fichier en deuxième argument lors de l'execution.
