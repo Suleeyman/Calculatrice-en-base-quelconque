@@ -318,7 +318,7 @@ void addition(nombre_t nombre1, nombre_t nombre2, resultat_t * resultat, base_t 
         i++;
         if(i == max && retenue != 0) { //Le dernier indice dispose d'un reste !
             resultat->length++;
-            realloc(resultat->resultat, resultat->length); //Pour acceuilir un chiffre de plus
+            resultat->resultat = realloc(resultat->resultat, resultat->length); //Pour acceuilir un chiffre de plus
             resultat->resultat[i] = retenue;
 
             break;
