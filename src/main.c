@@ -433,7 +433,6 @@ void division(nombre_t nombre1, nombre_t nombre2, resultat_t * resultat, base_t 
             longueurReference = longueurReference - (nombreDeZero - nombre1.length); // On réduit la longueur à partir des 0 inutiles derriere le nombre
             nombre1.length++; // On ajoute 1, cela représente l'action de faire descendre un nombre dans la file
         }
-        // printf("resultat ! %i\n", resultat->resultat[i]);
 
         /* 
         La division se termine, lorsque la valeur de l'addresse de la chaine principale,
@@ -471,11 +470,9 @@ int multipleResultant(char * nombre1, int * longueur1, nombre_t nombre2, base_t 
             // temp = nombre1[i];
             if ( (nombre1[i] - (nombre2.chaine[i] + retenue) ) < 0 ) {
                 nombre1[i] = nombre1[i] + base.base - (nombre2.chaine[i] + retenue);
-                // printf("(%i + %i) - (%i + %i) = %i\n", temp, base.base, nombre2.chaine[i], retenue, nombre1[i]);
                 retenue = 1;
             } else {
                 nombre1[i] = nombre1[i] - (nombre2.chaine[i] + retenue);
-                // printf("%i - (%i + %i) = %i\n", temp, nombre2.chaine[i], retenue, nombre1[i]);
                 retenue = 0;
             }
         }
